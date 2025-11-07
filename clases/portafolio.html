@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio Julian Lozano</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 79, 0.7);
+    }
+  </style>
+</head>
+<body class="text-white bg-[#00004F]">
+
+  <!-- Hero -->
+  <header class="hero-bg h-[60vh] flex items-center justify-center text-center overlay">
+    <div class="px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-md">Julian Lozano | Portafolio</h1>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <section class="py-16 px-4 max-w-7xl mx-auto">
+
+<div class="flex justify-center mb-10 space-x-4 overflow-x-auto px-2">
+  <button id="btn-proyectos" onclick="mostrar('proyectos')" class="px-6 py-2 bg-[#00FFFF] text-[#00004F] font-semibold rounded transition">Mis Proyectos en talento tech</button>
+  <button id="btn-more" onclick="mostrar('more')" class="px-6 py-2 bg-white text-[#00004F] font-semibold rounded transition">Proyectos Externos</button>
+  <button id="btn-info" onclick="mostrar('info')" class="px-6 py-2 bg-white text-[#00004F] font-semibold rounded transition">Mi Información</button>
+</div>
+
+
+
+    <h2 id="titulo" class="text-3xl font-semibold text-center mb-12 border-b-4 border-[#00FFFF] inline-block pb-2">Mis Proyectos En talento tech</h2>
+
+
+    <div id="proyectos" class="seccion-toggle grid gap-8 sm:grid-cols-2 lg:grid-cols-3 transition-all duration-300">
+      <a href="hoja-vida/" class="bg-white text-[#00004F] p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transform transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Hoja de vida</h3>
+        <p class="text-gray-700 mb-3">Diseño web con HTML, CSS y responsividad.</p>
+        <div class="flex gap-2">
+          <img src="https://w7.pngwing.com/pngs/185/866/png-transparent-html-logo-html-web-design-scalable-graphics-world-wide-web-markup-language-html5-icon-hd-miscellaneous-angle-text.png" alt="Logo HTML5" class="w-6 h-6" title="HTML5">
+          <img src="https://th.bing.com/th/id/R.7384412324c769e447d3c4f86e9ff068?rik=4WTiBokSddME4g&pid=ImgRaw&r=0" alt="Logo CSS" class="w-6 h-6" title="CSS">
+        </div>
+      </a>
+
+      <a href="chuchospan/" class="bg-white text-[#00004F] p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transform transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Cuchos Pan (sin estilos)</h3>
+        <p class="text-gray-700 mb-3">Diseño web básico sin hoja de estilo.</p>
+        <div class="flex gap-2">
+          <img src="https://w7.pngwing.com/pngs/185/866/png-transparent-html-logo-html-web-design-scalable-graphics-world-wide-web-markup-language-html5-icon-hd-miscellaneous-angle-text.png" alt="Logo HTML5" class="w-6 h-6" title="HTML5">
+        </div>
+      </a>
+
+      <a href="chuchospan/" class="bg-white text-[#00004F] p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transform transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Cuchos Pan (con estilos)</h3>
+        <p class="text-gray-700 mb-3">Versión con estilos y diseño responsivo.</p>
+        <div class="flex gap-2">
+          <img src="https://w7.pngwing.com/pngs/185/866/png-transparent-html-logo-html-web-design-scalable-graphics-world-wide-web-markup-language-html5-icon-hd-miscellaneous-angle-text.png" alt="Logo HTML5" class="w-6 h-6" title="HTML5">
+         
+        </div>
+      </a>
+
+      <a href="EcoVida/" class="bg-white text-[#00004F] p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transform transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Landing Page EcoVida</h3>
+        <p class="text-gray-700 mb-3">Página moderna con cssy responsividad.</p>
+        <div class="flex gap-2">
+          <img src="https://w7.pngwing.com/pngs/185/866/png-transparent-html-logo-html-web-design-scalable-graphics-world-wide-web-markup-language-html5-icon-hd-miscellaneous-angle-text.png" alt="Logo HTML5" class="w-6 h-6" title="HTML5">
+        </div>
+      </a>
+      <a href="https://usc.loaiza.cloud/" class="bg-white text-[#00004F] p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transform transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Proyecto Final</h3>
+        <p class="text-gray-700 mb-3">Tienda Ecommerce Universidad Santiago de Cali.</p>
+        <div class="flex gap-2">
+          <img src="https://w7.pngwing.com/pngs/185/866/png-transparent-html-logo-html-web-design-scalable-graphics-world-wide-web-markup-language-html5-icon-hd-miscellaneous-angle-text.png" alt="Logo HTML5" class="w-6 h-6" title="HTML5">
+        </div>
+      </a>
+    </div>
+
+    <!-- Proyectos Externos -->
+    <div id="more" class="seccion-toggle hidden grid gap-8 sm:grid-cols-2 lg:grid-cols-3 transition-all duration-300">
+      <a href="https://loaiza.cloud" class="bg-white text-[#00004F] p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transform transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Sistema de Rifas</h3>
+        <p class="text-gray-700">Aplicación PHP para gestión y validación de rifas.</p>
+         <img src="https://th.bing.com/th/id/R.7384412324c769e447d3c4f86e9ff068?rik=4WTiBokSddME4g&pid=ImgRaw&r=0" alt="Logo CSS" class="w-6 h-6" title="CSS">
+      </a>
+      <a href="https://loaiza.cloud/php/admin/" class="bg-white text-[#00004F] p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transform transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Panel Admin Rifas</h3>
+        <p class="text-gray-700">Gestión de usuarios, pagos y control interno.</p>
+         <img src="https://th.bing.com/th/id/R.7384412324c769e447d3c4f86e9ff068?rik=4WTiBokSddME4g&pid=ImgRaw&r=0" alt="Logo CSS" class="w-6 h-6" title="CSS">
+      </a>
+      <a href="https://loaiza.cloud/prueba" class="bg-white text-[#00004F] p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transform transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Mi Cóndor</h3>
+        <p class="text-gray-700 mb-3">Sistema web para grupos Scouts con validación de acceso.</p>
+        <div class="flex gap-2">
+          <img src="https://w7.pngwing.com/pngs/185/866/png-transparent-html-logo-html-web-design-scalable-graphics-world-wide-web-markup-language-html5-icon-hd-miscellaneous-angle-text.png" alt="HTML" class="w-6 h-6" title="HTML">
+          <img src="https://logowik.com/content/uploads/images/tailwind-css3232.logowik.com.webp" alt="TailwindCSS" class="w-6 h-6" title="TailwindCSS">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" class="w-6 h-6" title="JavaScript">
+        </div>
+      </a>
+      <a href="https://xendigital.co" class="bg-white text-[#00004F] p-6 rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transform transition duration-300">
+        <h3 class="text-xl font-bold mb-2">Agencia Xen Digital</h3>
+        <p class="text-gray-700">Agencia de diseño, desarrollo y branding web.</p>
+         <img src="https://logospng.org/download/css-3/logo-css-3-2048.png" alt="Logo CSS" class="w-6 h-6" title="CSS">
+      </a>
+    </div>
+
+    <!-- Información Personal -->
+    <div id="info" class="seccion-toggle hidden text-center max-w-3xl mx-auto text-white transition-all duration-300">
+      <h3 class="text-2xl font-bold mb-4">Julian Andrés Lozano</h3>
+      <p class="mb-2">📍 Cali, Colombia</p>
+      <p class="mb-2">💼 Desarrollador Web Full Stack</p>
+      <p class="mb-2">📧 <a href="mailto:loaizajulian63@gmail.com">loaizajulian63@gmail.com</a></p>
+      <p class="mb-2"><a href="http://xendigital.co" target="_blank" rel="noopener noreferrer">Xen digital</a></p>
+      <p class="mb-2">📱 +57 315 214 8074</p>
+      <p class="mt-4">Apasionado por crear soluciones tecnológicas modernas, funcionales y con impacto positivo en la educación y el desarrollo social.</p>
+    </div>
+
+  </section>
+
+  <script>
+  function mostrar(seccionId) {
+    const secciones = document.querySelectorAll('.seccion-toggle');
+    const titulo = document.getElementById('titulo');
+
+    // Ocultar todas las secciones
+    secciones.forEach(sec => sec.classList.add('hidden'));
+
+    // Mostrar sección activa
+    const activa = document.getElementById(seccionId);
+    if (activa) {
+      activa.classList.remove('hidden');
+      titulo.textContent = {
+        proyectos: "Mis Proyectos En talento tech",
+        more: "Proyectos Externos",
+        info: "Mi Información"
+      }[seccionId] || "Sección";
+    }
+
+    // Reiniciar estilo de botones
+    const botones = ['proyectos', 'more', 'info'];
+    botones.forEach(id => {
+      const btn = document.getElementById('btn-' + id);
+      if (btn) {
+        btn.classList.remove('bg-[#00FFFF]', 'text-[#00004F]');
+        btn.classList.add('bg-white', 'text-[#00004F]');
+      }
+    });
+
+    // Estilo activo
+    const activeBtn = document.getElementById('btn-' + seccionId);
+    if (activeBtn) {
+      activeBtn.classList.remove('bg-white');
+      activeBtn.classList.add('bg-[#00FFFF]');
+    }
+  }
+</script>
+
+
+  <!-- Footer -->
+  <footer class="bg-[#000038] text-center py-6 text-sm text-gray-300">
+    <p>&copy; 2025 Julian Lozano.</p>
+  </footer>
+
+</body>
+</html>
