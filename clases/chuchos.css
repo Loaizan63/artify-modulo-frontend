@@ -1,0 +1,274 @@
+/* ====== ESTILOS BASE ====== */
+:root {
+  --color-primario: #b30000;
+  --color-oscuro: #111;
+  --color-claro: #f4f4f4;
+  --color-acento: #ff4d00;
+}
+
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ====== ENCABEZADO ====== */
+header {
+  background-color: var(--color-oscuro);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: var(--color-acento);
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav li a:hover {
+  color: var(--color-acento);
+}
+
+/* ====== NOSOTROS ====== */
+.nosotros {
+  background-color: var(--color-primario);
+  text-align: center;
+  padding: 3rem 2rem;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.xen {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero p {
+  max-width: 40ch;
+  font-size: 1.1rem;
+}
+
+/* ====== SERVICIOS ====== */
+.servicios-section {
+  background-color: var(--color-claro);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.servicios-section h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.contenedor-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.servicio {
+  width: 15rem;
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.servicio:hover {
+  transform: scale(1.05);
+}
+
+.servicio-img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* ====== PRODUCTOS ====== */
+.productos {
+  padding: 3rem 2rem;
+}
+
+.productos h2 {
+  margin-bottom: 2rem;
+}
+
+.producto-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.producto {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.producto h3 {
+  margin: 0.5rem 0 0.2rem;
+}
+
+.producto p {
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+/* ====== TABLA Y HORARIOS ====== */
+.horarios {
+  background-color: #fff;
+  padding: 3rem 2rem;
+}
+
+table {
+  margin: 1rem auto 2rem;
+  width: 90%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 1rem;
+}
+
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+th, td {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: var(--color-oscuro);
+  color: var(--color-claro);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.container-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  width: 2px;
+  height: 2.5rem;
+  background-color: var(--color-claro);
+}
+
+.card-info p {
+  margin: 0.3rem 0;
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  header h1 {
+    text-align: center;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .xen {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+  }
+  header {
+    flex-direction: column;
+  }
+  header h1 {
+    font-size: 1.4rem;
+  }
+  .servicio {
+    width: 80%;
+  }
+  table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .container-info {
+    flex-direction: column;
+  }
+  .divider {
+    display: none;
+  }
+}
