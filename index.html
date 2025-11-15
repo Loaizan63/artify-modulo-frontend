@@ -1,37 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Entregas | Artify 2025 - Julián Lozano</title>
-  <link rel="stylesheet" href="css/styles.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AutoMarket Plus - Compra y venta de vehículos de alta calidad. Amplia variedad de autos nuevos y usados con garantía.">
+    <meta name="keywords" content="venta autos, vehículos usados, autos nuevos, AutoMarket Plus">
+    <meta name="author" content="AutoMarket Plus">
+    <title>AutoMarket Plus | Compra y Venta de Vehículos de Calidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <h1>Artify 2025</h1>
-  </header>
+    <header class="sticky-top bg-white shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center gap-3">
+                <img src="logo.png" alt="AutoMarket Plus Logo" style="max-width: 50px;">
+                <h1 class="h3 m-0">AutoMarket Plus</h1>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button title="nav-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#vehiculos">Vehículos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <!-- Hero -->
-    <section id="home" class="hero">
-      <h1>Portafolio de Entregas — Julián Lozano 2025</h1>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="py-5 text-center bg-primary text-white">
+            <div class="container">
+                <h2 class="display-4 mb-3">Encuentra tu Vehículo Ideal</h2>
+                <p class="lead mb-4">Los mejores autos nuevos y usados con garantía certificada</p>
+                <a href="#vehiculos" class="btn btn-light btn-lg">Explorar Vehículos</a>
+            </div>
+        </section>
 
-    <!-- Lista de entregas -->
-    <section id="entregas" class="entregas">
-      <h2>📦 Entregas</h2>
-      <ul>
-        <li><a href="clases/portafolio.html">Clase 1 – Portafolio Personal</a></li>
-        <li><a href="clases/entrega2.html">Clase 2 – Pagina con Medidas </a></li>
-      </ul>
-    </section>
+        <!-- Carousel -->
+        <section class="py-5">
+            <div class="container">
+                <div id="carouselAutos" class="carousel slide" data-bs-touch="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="OIP (1).webp" class="d-block w-100 rounded" alt="Vehículos disponibles AutoMarket">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="OIP.webp" class="d-block w-100 rounded" alt="Autos de lujo">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagen3.webp" class="d-block w-100 rounded" alt="Autos económicos">
+                        </div>
+                    </div>
+                    <button title="turn left" class="carousel-control-prev" type="button" data-bs-target="#carouselAutos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button title="turn right" class="carousel-control-next" type="button" data-bs-target="#carouselAutos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Artify · Desarrollado por Julián Lozano</p>
-  </footer>
+        <!-- About Section -->
+        <section id="nosotros" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Sobre AutoMarket Plus</h2>
+                <p class="text-center lead mb-3">Somos líderes en la venta de vehículos con más de 10 años de experiencia.</p>
+                <div class="row g-4">
+                    <div class="col-md-4 text-center">
+                        <h5>✓ Garantía Certificada</h5>
+                        <p>Todos nuestros vehículos cuentan con garantía y revisión mecánica completa.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h5>✓ Variedad de Opciones</h5>
+                        <p>Amplio catálogo de marcas y modelos para todas las necesidades.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h5>✓ Financiamiento Disponible</h5>
+                        <p>Opciones de pago flexible y financiamiento con tus bancos de confianza.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <script src="js/main.js"></script>
+        <section id="vehiculos" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestro Catálogo de Vehículos</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="OIP.webp" class="card-img-top" alt="Chevrolet Spark 2023">
+                            <div class="card-body">
+                                <h5 class="card-title">Chevrolet Spark 2023</h5>
+                                <p class="card-text">Sedán confiable, 50,000 km, buen consumo de combustible.</p>
+                                <p class="text-success fw-bold fs-5">$68,500</p>
+                                <a href="#contacto" class="btn btn-primary w-100">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="OIP (1).webp" class="card-img-top" alt="Hyundai Creta 2020">
+                            <div class="card-body">
+                                <h5 class="card-title">Hyundai Creta 2020</h5>
+                                <p class="card-text">SUV espacioso, 35,000 km, sistema AWD incluido.</p>
+                                <p class="text-success fw-bold fs-5">40,900</p>
+                                <a href="#contacto" class="btn btn-primary w-100">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="fuck.webp" class="card-img-top" alt="Volkswagen Jetta 2021">
+                            <div class="card-body">
+                                <h5 class="card-title">Volkswagen Jetta 2021</h5>
+                                <p class="card-text">Sedán alemán de lujo, 42,000 km, interiores premium.</p>
+                                <p class="text-success fw-bold fs-5">$58,800</p>
+                                <a href="#contacto" class="btn btn-primary w-100">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-5 bg-dark text-white">
+            <div class="container">
+                <h2 class="text-center mb-5">Contacto</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h5>Información de Contacto</h5>
+                        <p><strong>Teléfono:</strong> +57 (301) 1234 567</p>
+                        <p><strong>Email:</strong> info@automarketplus.com</p>
+                        <p><strong>Dirección:</strong> Calle Principal 123, Ciudad</p>
+                        <p><strong>Horario:</strong> Lunes a Viernes 9:00 - 18:00</p>
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <input type="text" class="form-control mb-2" placeholder="Tu Nombre" required>
+                            <input type="email" class="form-control mb-2" placeholder="Tu Email" required>
+                            <textarea class="form-control mb-2" placeholder="Tu Mensaje" rows="4" required></textarea>
+                            <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light py-4 text-center border-top">
+        <p>&copy; 2025 AutoMarket Plus. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
